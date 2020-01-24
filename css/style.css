@@ -75,6 +75,12 @@ body {
     font-family: "Lora", sans-serif;
     font-size: 1.4rem; }
 
+.footer {
+  grid-column: col-start 2 / col-end 9;
+  padding: 3rem 0 3rem 0;
+  font-size: 1.6rem;
+  font-weight: 700; }
+
 .header {
   grid-column: col-start 2 / col-end 9;
   display: grid;
@@ -126,7 +132,7 @@ body {
           width: 2rem; } }
 
 .projects {
-  margin: 10rem 0;
+  margin: 10rem 0 0rem 0;
   grid-column: col-start 2 / col-end 8;
   display: grid;
   grid-template-columns: 1fr 4fr;
