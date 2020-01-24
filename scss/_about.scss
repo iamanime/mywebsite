@@ -1,0 +1,19 @@
+.about {
+    margin: 5rem 0 10rem 0;
+    grid-column: col-start 2 / col-end 8;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 0;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 3rem;
+    }
+
+    &__content {
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: .5px;
+    }
+}

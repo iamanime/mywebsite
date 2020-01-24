@@ -1,0 +1,36 @@
+.skills {
+    margin: 10rem 0;
+    grid-column: col-start 2 / col-end 8;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 0;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 4rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        letter-spacing: .5px;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: .5px;
+    }
+}

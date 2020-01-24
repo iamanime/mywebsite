@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #444452;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(5, min-content);
+  grid-template-columns: 1fr repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) 1fr; }
+
+.heading-3 {
+  justify-self: end;
+  color: #007bff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 2px; }
+  @media only screen and (max-width: 50em) {
+    .heading-3 {
+      justify-self: start; } }
+
+.bold {
+  font-weight: 700; }
+
+.about {
+  margin: 5rem 0 10rem 0;
+  grid-column: col-start 2 / col-end 8;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 7rem; }
+  @media only screen and (max-width: 50em) {
+    .about {
+      margin-top: 0;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 3rem; } }
+  .about__content {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .5px; }
+
+.experience {
+  margin: 10rem 0;
+  grid-column: col-start 2 / col-end 8;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 7rem; }
+  @media only screen and (max-width: 50em) {
+    .experience {
+      margin-top: 0;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 4rem; } }
+  .experience__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem; }
+  .experience__company {
+    font-size: 1.6rem;
+    letter-spacing: .5px;
+    margin-bottom: 2px; }
+  .experience__position {
+    font-size: 1.5rem; }
+  .experience__tenure {
+    font-family: "Lora", sans-serif;
+    font-size: 1.4rem; }
+
+.header {
+  grid-column: col-start 2 / col-end 9;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-row-gap: 5rem;
+  align-content: center; }
+  .header__greeting {
+    font-family: "Lora", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 1px; }
+    @media only screen and (max-width: 37.5em) {
+      .header__greeting {
+        font-size: 2.5rem; } }
+    .header__greeting img {
+      width: 4rem;
+      height: 4rem;
+      margin-top: 2rem;
+      margin-left: .5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .header__greeting img {
+          width: 3rem;
+          height: 3rem; } }
+  .header__intro {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px; }
+    @media only screen and (max-width: 37.5em) {
+      .header__intro {
+        font-size: 2.5rem; } }
+    .header__intro span {
+      font-weight: 700; }
+  .header__contact {
+    font-size: 2.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__contact {
+        font-size: 1.6rem; } }
+    .header__contact a {
+      text-decoration: none;
+      color: #444452;
+      border-bottom: 3px solid #007bff;
+      letter-spacing: normal; }
+    .header__contact img {
+      width: 3rem;
+      margin: 2rem 1rem 0 1rem; }
+      @media only screen and (max-width: 37.5em) {
+        .header__contact img {
+          width: 2rem; } }
+
+.projects {
+  margin: 10rem 0;
+  grid-column: col-start 2 / col-end 8;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 7rem; }
+  @media only screen and (max-width: 50em) {
+    .projects {
+      margin-top: 0;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 4rem; } }
+  .projects__box {
+    display: grid;
+    grid-template-rows: min-content min-content 6rem;
+    grid-row-gap: 1.2rem; }
+  .projects__title {
+    font-size: 1.6rem;
+    letter-spacing: .5px; }
+  .projects__description {
+    font-size: 1.4rem; }
+  .projects__tags span {
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: .5rem;
+    border: 1px solid #007bff;
+    border-radius: .3rem;
+    padding: .2rem .7rem;
+    letter-spacing: .5px; }
+
+.skills {
+  margin: 10rem 0;
+  grid-column: col-start 2 / col-end 8;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 7rem; }
+  @media only screen and (max-width: 50em) {
+    .skills {
+      margin-top: 0;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 4rem; } }
+  .skills__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .skills__list {
+    list-style: none; }
+  .skills__heading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: .5px; }
+  .skills__item {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: .5px; }
+
+/*# sourceMappingURL=style.css.map */
