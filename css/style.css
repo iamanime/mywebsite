@@ -45,6 +45,10 @@ body {
       margin-top: 0;
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
       grid-gap: 3rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .about {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .about__content {
     font-size: 1.5rem;
     font-weight: 300;
@@ -61,6 +65,10 @@ body {
       margin-top: 0;
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
       grid-gap: 4rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .experience {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .experience__box {
     display: flex;
     justify-content: space-between;
@@ -80,6 +88,9 @@ body {
   padding: 3rem 0 3rem 0;
   font-size: 1.6rem;
   font-weight: 700; }
+  @media only screen and (max-width: 28.125em) {
+    .footer {
+      padding-left: 1rem; } }
 
 .header {
   grid-column: col-start 2 / col-end 9;
@@ -87,6 +98,10 @@ body {
   grid-template-rows: repeat(3, min-content);
   grid-row-gap: 5rem;
   align-content: center; }
+  @media only screen and (max-width: 28.125em) {
+    .header {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .header__greeting {
     font-family: "Lora", sans-serif;
     font-size: 4rem;
@@ -95,6 +110,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__greeting {
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .header__greeting {
+        font-size: 2em; } }
     .header__greeting img {
       width: 4rem;
       height: 4rem;
@@ -112,6 +130,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__intro {
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .header__intro {
+        font-size: 2em; } }
     .header__intro span {
       font-weight: 700; }
   .header__contact {
@@ -142,6 +163,10 @@ body {
       margin-top: 0;
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
       grid-gap: 4rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .projects {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .projects__box {
     display: grid;
     grid-template-rows: min-content min-content 6rem;
@@ -173,9 +198,13 @@ body {
       margin-top: 0;
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
       grid-gap: 4rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .skills {
+      padding-left: 1rem; } }
   .skills__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 3rem; }
   .skills__list {
     list-style: none; }
   .skills__heading {
