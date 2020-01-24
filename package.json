@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "node ./node_modules/gh-pages/bin/gh-pages.js -d dist"
   },
   "keywords": [],
   "author": "",
