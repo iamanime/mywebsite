@@ -179,23 +179,26 @@ body {
       padding-right: 1rem; } }
   .projects__box {
     display: grid;
-    grid-template-rows: min-content min-content 6rem;
+    grid-template-rows: min-content min-content min-content;
     grid-row-gap: 1.2rem; }
   .projects__title {
     font-size: 1.6rem;
     letter-spacing: .5px; }
   .projects__description {
     font-size: 1.4rem; }
-  .projects__tags span {
-    color: #007bff;
-    font-size: 1rem;
-    font-weight: 500;
-    display: inline-block;
-    margin-right: .5rem;
-    border: 1px solid #007bff;
-    border-radius: .3rem;
-    padding: .2rem .7rem;
-    letter-spacing: .5px; }
+  .projects__tags {
+    margin-bottom: 2rem; }
+    .projects__tags span {
+      color: #007bff;
+      font-size: 1rem;
+      font-weight: 500;
+      display: inline-block;
+      margin-right: .5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #007bff;
+      border-radius: .3rem;
+      padding: .2rem .7rem;
+      letter-spacing: .5px; }
 
 .skills {
   margin: 10rem 0;
