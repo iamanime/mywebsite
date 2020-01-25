@@ -18,7 +18,7 @@
 
     &__box {
         display: grid;
-        grid-template-rows: min-content min-content 6rem;
+        grid-template-rows: min-content min-content min-content;
         grid-row-gap: 1.2rem;
     }
 
@@ -32,12 +32,14 @@
     }
 
     &__tags {
+        margin-bottom: 2rem;
         span {
             color: $color-text-primary;
             font-size: 1rem;
             font-weight: 500;
             display: inline-block;
             margin-right: .5rem;
+            margin-bottom: 1rem;
             border: 1px solid $color-text-primary;
             border-radius: .3rem;
             padding: .2rem .7rem;
